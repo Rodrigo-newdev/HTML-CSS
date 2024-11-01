@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brain-2.ico" type="image/x-icon">
+    <style>
+        div > p {display: none;}
+        /*O símbolo ">" após uma div, cria um "filho" para a div. Ou seja, todo o conteúdo que estiver dentro da div e dentro de p neste exemplo, será formatado.*/
+        
+        div:hover > p {display:block;
+        background-color:  rgb(124, 212, 124);
+        color: white;
+        width: 150px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;}
+
+        a {color: rgb(248, 3, 3);
+        text-decoration: none;}
+        a:visited {color: red;}
+        
+        a:hover {color: black;}
+
+    </style>
+    <title>Exemplo de hover(Pseudo Classes)</title>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <div>
+        Passe o mouse aqui!
+        <p><a href="https://www.youtube.com/watch?v=J9zepG022gw">Texto escondido 01</a></p>
+        <p>Texto escondido 02</p>
+        <p>Texto escondido 03</p>
+    </div>
+</body>
+</html>

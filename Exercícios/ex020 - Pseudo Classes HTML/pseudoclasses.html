@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brain-2.ico" type="image/x-icon">
+    <title>Pseudo Classes</title>
+    <style>
+        div {display: inline-block;
+            background-color: gray;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;}
+
+        div:hover {background-color: yellow;}
+
+        div > p {display: none;}
+
+        div:hover p{display: block;
+                    width: 200px;}
+        
+    </style>
+</head>
+<body>
+   <div>d1</div>
+   <div>d2</div>
+   <div>d3</div>
+   <div>d4</div>
+
+   <h1>Exemplo de hover</h1>
+   <p>Passe o mouse aqui</p>
+   <div>
+    <p>TEXTO ESCONDIDO</p>
+   </div>
+</body>
+</html>

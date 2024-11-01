@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brain-2.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(174, 209, 209);
+        }
+        #h1a {color: brown;
+            padding: 20px;
+        }
+
+        #h1b {padding: 20px;}
+        #p1 {padding: 20px;}
+        
+    </style>
+    <title>Links</title>
+
+   
+</head>
+<body>
+    <h1 id="h1a">USANDO LINKS EXTERNOS</h1>
+    
+    <p id="p1">Você pode acessar meu <a href="https://github.com/Rodrigo-newdev" target="_blank" rel="external">repositório público do Github.</a></p>
+
+    <!--A tag <a> significa ancora. Serve para ancorar (colocar link num texto)-->    
+    <!--O parâmetro target e o parâmetro rel, são ncessário para que ao clicar no link, não saiam do nosso site.-->
+    <!--rel = relacionado a um link externo-->
+    <!--target = Um alvo, uma página em branco.-->
+
+    <p id="p2">Você também pode acessar <a href="https://www.instagram.com/rodrigomartins.invest/">meu instagram</a>
+    </p>
+    
+
+    <!--Neste caso como não coloquei o parâmetro target e rel, ao clicar no link, saímos do nosso site-->
+    
+    <h1 id="h1b">USANDO LINKS INTERNOS</h1>
+    <p>Esta é a primeira página do site, se quiser pode acessar a <a href="pag002.html" rel="next" target="_self">SEGUNDA PÁGINA</a>.</p>
+
+    <!--O atributo "next e prev" não faz nada na página para quem está utilizando, mas diz para os mecanismos de busca do google que a a próxima pagina é a específica, assim como a página anterior é a específica.-->
+
+    <!--O atributo rel=_self ser para dizer ao mecanismo que deve permanecer na mesma aba ao mudar de página.-->
+
+    <p> Esta página é um oferencimento a <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hosnet</a>
+    </p>
+        
+    <!--O atributo rel=nofollow, serve para dizer aos mecanismos de busca que você não dá um aval para o conteúdo. Serve também para um conteúdo que a empresa pagou para fazer e você não dá o aval. O nofollow não é para a pessaoa que está acessando o conteúdo, mas sim para os mecanismos de buscas.-->
+
+
+
+
+   
+
+</body>
+</html>

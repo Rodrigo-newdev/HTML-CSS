@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+a {text-decoration: none;
+   color: black;}
+
+
+h1 {padding-left: 15px;} 
+a:visited {color: red;}
+
+a:hover {border: 1px black;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(128, 128, 128);
+        font-weight: bold;
+        color: white;}
+
+a:active {color: red;}
+
+a::after {
+    content: ' [O link está ao lado esquerdo!]';
+    color: rgb(128, 128, 128);
+}
+

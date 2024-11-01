@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brain-2.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(196, 238, 224);}
+    </style>
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos em Diversos Formatos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="500px" controls>
+        <source src="midia/meu-video.webm" type="video/webm">
+    </video>
+
+    <p>Abaixo mais uma forma de inserir vídeos</p>
+
+    <video src="midia/meu-video.webm" width="550px" controls></video>
+
+    <!--Os vídeos, por mais que colocamos uma largura com *width* ele não reduz o seu tamanho (carga no site).-->
+
+    <!--Por este motivo não é interessante colocar arquivos muito pesados, pois vai sobrecarregar o site, e também será pago uma fortuna em hospedagem.-->
+
+    <h2>O único arquivo que não funcionou foi a extensão .ogv</h2>
+
+    <h3>Ficar atento com os formatos aceitos em cada navegador</h3>
+
+    <p>Para resolver essa questão de não saber por qual navegador será acessado, vamos usar o source</p>
+
+    <video poster="imagens/capa-video.png" width="500px" controls>
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mkv" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não é compatível com os formatos do vídeo.</p>
+    </video>
+
+    <!--O atributo poster serve par colocar capa no vídeo-->
+
+
+</body>
+</html>

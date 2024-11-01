@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brain-2.ico" type="image/x-icon">
+    <style>body {background-color: rgb(210, 223, 252)};</style>
+    <title>Formatação</title>
+</head>
+<body>
+    <h1>Aula de Formatação</h1>
+    <!--ESPAÇO COMENTÁRIO
+    1. Index que colocamos ao criar o arquivo HTML, significa índice.-->
+    <h2>Código Fonte / Formatação</h2>
+    <p>O comando <code>document.getElementById("Teste")</code> é escrito em JavaScript.</p>
+    <!--O comando code serve para melhorar o espaçamento das fontes. Muito boa para ler códigos.-->
+
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+            
+        print('Fim do programa')
+    </code>
+    <!--O comando code não organiza as escritas com identação lá no HTML.-->
+
+    <PRE>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+        
+            print('Fim do programa')
+        </code>
+    </PRE>
+    <!--Quando colocado o comando PRE, os textos dos códigos ficam identados/organizados lá no HTML. -->
+
+
+    <PRE>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é IMPAR')
+
+print('Fim do programa')
+        </code>
+    </PRE>
+    <!--Se quisermos alinhar os códigos a esquerda, basta segurar SHIFT e apertar TAB quantas vezes forem necessárias.
+    
+    A tecla TAB leva os textos para a direita. Basta selecioná-los e apertar TAB.
+    
+    Dentro de uma tag PRE, os espaços entre linhas ocorrem sem necessidade de utilizar a tag br.-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+    <!--A tag q serve para colocar citações. Ou seja, colocar entre aspas.-->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jef Noble, no seu livro HTML para leigos:
+        <blockquote cite="https://www.google.com.br/books/edition/Html_Passo_A_Passo/XsRxDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">Aprender HTML também pode ser divertido</blockquote>
+    </p>
+    <!--Usando a tag blockquote, coloca-se a citação deslocada.
+    O parâmetro "cite" linka para que  os mecânismos de busca, saibam que a frase citada esteja referenciando o livro.-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!--A tag abbr serve para dar explicações sobre as abreviações. Colocamos as abreviações dentro de title.
+    Basta passar o mouse na palavra e a explicação aparece.-->
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS!</bdo></p>
+    <!--Não tem muita funcionalidade, mas a tag bdo, serve para inverter textos. Não esquecer de colocar o parâmetro dir="rtl"-->
+</body>
+</html>
